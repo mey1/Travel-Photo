@@ -1,0 +1,508 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+/*-------------------------
+Google fonts
+---------------------------*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+/*---------------------
+Style the body
+----------------------*/
+
+body{
+     background-color: black;
+     font-family: 'Prompt', sans-serif;
+     margin: 0px 0px 0px 0px;
+
+        }
+
+
+/*-----------------------------
+Style the Watch Now button in the header
+------------------------------*/
+ .watch {
+      padding: 20px 60px 20px 60px;
+      bottom:40px;
+      left: 130px;
+      background-color: red;
+       border: none;
+       color: white;
+      font-size: 18px;
+       text-transform: uppercase;
+       display: inline block;
+       position: absolute;
+            }
+
+
+
+/*-----------------------------
+ Start Typography
+------------------------------*/
+
+h1    {
+       font-size: 55px;
+       position: absolute;
+       text-transform: uppercase;
+       color: red;
+       line-height:1.2;
+       border: 5px solid red;
+   margin: 120px;
+
+        }
+
+h3 {
+      font-size: 47px;
+      text-align: left;
+      line-height: 1.3;
+      text-transform: uppercase;
+      }
+
+p    {
+    color: white;
+     }
+
+
+h4    {
+     color: white;
+     font-size: 35px;
+    }
+
+
+/*-----------------------------
+ End Typography
+------------------------------*/
+
+
+/*-----------------------------
+ Style navigation bar links
+------------------------------*/
+
+.navbar a {
+  color: white;
+  padding: 20px 8px;
+  text-decoration: none;
+  text-align: center;
+  margin:20px;
+  font-weight: 200;
+  font-size: 15px;
+
+}
+
+/*-----------------------------------
+ Change navigation bar color on hover
+------------------------------------*/
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*-----------------------------
+ Navigation right side
+------------------------------*/
+
+.topnav-right {
+      float: right;
+}
+
+
+/*-----------------------------
+  Start Hero section
+------------------------------*/
+
+.hero-image {
+  background: url(https://images.unsplash.com/photo-1491555103944-7c647fd857e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80) no-repeat center;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+  margin: 35px 0px 0px 0px;
+
+        }
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+span {
+     color: red;
+     text-transform: uppercase;
+     font-size: 24px;
+     font-weight:300;
+      padding: 0 0 0 120px;
+        }
+
+/*-----------------------------
+ End Hero Section
+------------------------------*/
+
+/*------------------
+Start Text Blocks
+--------------------*/
+
+.text2   {
+        font-size: 18px;
+        font-weight: 300;
+        text-align: left;
+        line-height: 1.0;
+        text-transform: lowercase;
+        margin: 60px 0px 0px 0px;
+            }
+
+    a     {
+      color: red;
+      text-decoration: undeline;
+      font-weight: 300;
+      font-size: 18px;
+         }
+
+    .author   {
+   font-weight: 200;
+      text-transform: uppercase;
+      color: grey;
+      font-size: 16px;
+      line-height: 1.6;
+      flaot: left;
+     }
+
+.number {
+        font-size: 90px;
+        font-weight: 700;
+        padding: 150px 0px 0px 0px;
+        line-height: 1.5;
+       }
+
+
+
+.sign {
+             padding: 20px 100px 20px 100px;
+             margin: 120px;
+             background-color: red;
+             border: none;
+             color: white;
+             font-size: 18px;
+             text-transform: uppercase;
+            }
+
+
+/*------------------
+End text blocks
+--------------------*/
+
+
+/*-----------------------------
+ Start Testimonial Section
+------------------------------*/
+
+.caption  {
+             font-size: 19px;
+             font-weight: 200;
+             text-align: center;
+                  }
+
+.founder-text  {
+               font-size: 35px;
+               font-weight: 600;
+               text-transform: lowercase;
+               line-height:1;
+               text-align: center;
+
+      }
+
+.founder-img  {
+               border-radius: 50%;
+     }
+
+
+.photographer   {
+   font-weight: 200;
+      text-transform: uppercase;
+      color: black;
+      font-size: 16px;
+      line-height: 1.6;
+      flaot: left;
+     }
+
+/*-----------------------------
+ End Testimonial Section
+------------------------------*/
+
+
+
+/*-----------------------------
+Section 2 flexbox
+------------------------------*/
+
+.topnav-right {
+      float: right;
+}
+
+
+
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+
+  /* Then we define the flow direction
+     and if we allow the items to wrap
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+
+.flex-item {
+
+  padding: 5px;
+  width: 450px;
+  height: 600px;
+  margin-top: 10px;
+  line-height: 1.3px;
+  color: white;
+  font-weight: bold;
+    }
+
+
+/*-----------------------------
+ Start Gallery section
+------------------------------*/
+
+
+.flex-item2 {
+  padding: 0px 60px;
+  width: 200px;
+  height: 700px;
+  margin-top: 10px;
+  line-height: 1.3;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+/*-----------------------------
+ End Gallery section
+------------------------------*/
+
+/*---------------
+  Start Footer
+----------------*/
+
+.flex-item3 {
+
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 2;
+  color: white;
+  font-weight: 400;
+  font-size: 1em;
+  text-align: left;
+}
+
+
+
+.navigation {
+
+
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 1.8;
+  color: grey;
+  font-weight: 400;
+  font-size: 1em;
+  text-align: left;
+
+}
+
+
+/*---------------
+  End Footer
+----------------*/
+
+</style>
+</head>
+
+<body>
+
+<!--------------------
+  Navigation Bar
+ ---------------------->
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Gallery</a>
+  <a href="#">Services</a>
+  <a href="#">Contact Us</a>
+
+  <div class="topnav-right">
+      <a class="sign" href="#about">Contact Now</a>
+  </div>
+</div>
+
+<!--------------------
+  Header
+ ---------------------->
+
+<div class="hero-image">
+<div class="text">
+  <span>—Stunning locations</span>
+  <h1 class="border">Set your sights</h1>
+  <button class="watch">Watch Portfolio</button>
+</div>
+</div>
+
+
+<!-----------------------------
+  Start User Experience Section
+ ----------------------------->
+
+<ul class="flex-container">
+  <li class="flex-item">
+  <h3>Travel the world<br>and see</h3>
+
+    <a href>hire@setyoursights.com</a>
+
+   </li>
+   <li class="flex-item">
+    <h3 class="text2">You can't use up creativity, the more you<br> have the more you use in your significant<br> mind.</h3>
+    <p class="author">salvadore Rushby,<br> Digital Artist<p>
+
+    <span class="number">05<span> <p>years of digital Experience</p>
+  </li>
+
+</ul>
+
+<!-----------------------------
+  End User Experience Section
+ ----------------------------->
+
+
+<!-----------------------------
+  Start Gallery Section
+ ----------------------------->
+
+ <ul class="flex-container">
+   <li class="flex-item2">1
+   <img src="https://images.unsplash.com/photo-1491331568367-82b3c8018969?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" style="width:450px; height:700px;" ></img>
+   </li>
+  <li class="flex-item2">2
+  <img src="https://images.unsplash.com/photo-1526994636733-4c05e8e063fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=358&q=80;"style="width:450px; height:700px;" ></img></li>
+  <li class="flex-item2">3
+<img src="https://images.unsplash.com/photo-1502301197179-65228ab57f78?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=332&q=80" style="width:450px; height:700px;" ></img>
+   </li>
+</ul>
+
+
+<ul class="flex-container">
+    <li class="flex-item2">
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" style="width:450px; height:700px;"></img>
+   </li>
+  <li class="flex-item2">
+  <img src="https://images.unsplash.com/photo-1524850301259-7729d41d11d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=426&q=80" style="width:450px; height:700px;"></img>
+  </li>
+  <li class="flex-item2">
+  <img src="https://images.unsplash.com/photo-1524842495237-6abc737eae1f?ixlib=rb-1.2.1&auto=format&fit=crop&w=385&q=80" style="width:450px; height:700px;"></img>
+  </li>
+</ul>
+
+<!-----------------------------
+  Gallery Section End
+ ----------------------------->
+
+
+<!-----------------------------
+  Testimonial Section Start
+ ----------------------------->
+
+<div class="single-testimonial text-center">
+ <!-- Testimonial Content -->
+     <div class="caption">
+    <div class="testimonial-top-cap">
+
+
+   <h4> Why choose us?</h4>                                     <p>We are committed to helping clients reach their goals. It  takes teamwork, and a solid commitment to good<br> communication, excellence, and industry best practices to serve a company in an excellent manner.<br>We bring our diverse background of advertising and branding. </p>
+   </div>
+
+  <!-- founder Image -->
+ <div class="testimonial-founder d-flex align-items-center  justify-content-center">
+    <div class="founder-img">
+    <img src="https://images.unsplash.com/photo-1545594262-ded8a9096085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" class="founder-img" style= "width: 100px; height:120px" alt="executive man">
+   </div>
+   <div class="founder-text">
+   <span class="founder-text";>Jessya Inn</span>
+   <p class="photographer">Head Photographer</p>
+     </div>
+     </div>
+      </div>
+    </div>
+      </div>
+      </div>
+      </div>
+      </div>
+    </div>
+
+<!-----------------------------
+  Testimonial Section End
+ ----------------------------->
+
+<!-----------------------------
+  Footer Begin
+ ----------------------------->
+
+<ul class="flex-container">
+  <li class="flex-item3">Grabbing the consumers attention isnt enough. You have to keep that attention at least for a. </li>
+  <p class="navigation">
+  Navigation<br>
+  Home<br>
+  Events<br>
+  Testimonials<br>
+  Categories<br>
+  Contacts<br>
+  </p>
+
+  <p class="navigation">Useful Links<br>
+    Registration<br>
+    Login<br>
+     Policy<br>
+     Terms & Conditions
+  </p>
+
+
+  <p class="flex-item3">Instagram Feed</p>
+      </ul>
+
+
+<!-----------------------------
+  Footer End
+ ----------------------------->
+
+
+ </body>
+ </html>
